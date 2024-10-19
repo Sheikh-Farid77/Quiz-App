@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <!-- tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
+  </head>
+  <body class="bg-[#001e4d]">
+    <div class="app bg-white w-11/12 max-w-[600px] p-8 rounded-xl mx-auto my-[100px]">
+        <h1 class="text-5xl font-semibold border-b-2 py-2 border-black">Simple Quiz</h1>
+        <div class="quiz py-5">
+            <h2 id="question" class="text-3xl font-semibold">Question Are Here</h2>
+            <div id="answer-btn">
+                <button class="btn bg-white text-[#222] font-medium w-full border border-[#222] p-3 my-3 text-left rounded-lg cursor-pointer transition-all hover:bg-[#222] hover:text-white">Answer 1</button>
+                <button class="btn bg-white text-[#222] font-medium w-full border border-[#222] p-3 my-3 text-left rounded-lg cursor-pointer transition-all hover:bg-[#222] hover:text-white">Answer 2</button>
+                <button class="btn bg-white text-[#222] font-medium w-full border border-[#222] p-3 my-3 text-left rounded-lg cursor-pointer transition-all hover:bg-[#222] hover:text-white">Answer 3</button>
+                <button class="btn bg-white text-[#222] font-medium w-full border border-[#222] p-3 my-3 text-left rounded-lg cursor-pointer transition-all hover:bg-[#222] hover:text-white">Answer 4</button>
 
+            </div>
+            <button id="next-btn" class="bg-[#001e4d] text-white font-medium w-36 p-3 my-5 mx-auto hidden rounded-xl cursor-pointer">Next</button>
 
+        </div>
+
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
